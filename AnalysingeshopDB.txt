@@ -1,0 +1,55 @@
+Collection or table required for EShop DB:-
+
+1) Products
+    id: string
+    name: string
+    description: string
+    richDescription: string
+    image: string
+    images: string[]
+    brand: string
+    price: number
+    category: Category
+    countInStock: number
+    rating: number
+    isFeatured: boolean
+    dateCreated: Date
+
+2) Orders
+    id: string
+    orderItems: orderItem[]
+    shippingAddress1: string
+    shippingAddress2: string
+    city: string
+    zip: string
+    country: string
+    phone: number
+    status: string
+    totalPrice: number
+    user: user
+    dateOrdered: Date
+
+3) Category
+    id: string
+    name: string
+    color: string
+    icon: string
+    image: string
+
+4) Users
+    id: string
+    name: string
+    email: string
+    passwordHash: string
+    street: string
+    apartment: string
+    city: string
+    zip: string
+    country: string
+    phone: number
+    isAdmin: boolean
+
+5) orderItems
+    id: string
+    product: Product
+    quantity: number
